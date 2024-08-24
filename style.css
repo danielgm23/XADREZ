@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+   
+}
+body {
+    background-image: url(./assets/BG.jpg);
+    margin: auto;
+    height: 100%;
+}
+
+header {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(8, 100px); /* 8 colunas de 50px cada */
+    margin: auto;
+    justify-content: center;
+   
+ 
+
+  }
+  .game-two {
+    display: grid;
+    grid-template-columns: repeat(8, 100px); /* 8 colunas de 50px cada */
+    margin: auto;
+    justify-content: center;
+ 
+
+  }
+  
+  .cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff; /* Cor de fundo das células */
+    border: 1px solid #ddd; /* Borda opcional para cada célula */
+    font-size: 1.5em; /* Tamanho do texto, opcional */
+    height: 100px;
+  }
+  .cell-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff; /* Cor de fundo das células */
+    border: 1px solid #ddd; /* Borda opcional para cada célula */
+    font-size: 1.5em; /* Tamanho do texto, opcional */
+    height: 100px;
+  }
+
+  .cell:nth-child(odd){
+    background-image: url(./assets/placa_preta.jpg)
+        
+  }
+
+   
+  
+  .cell:nth-child(even){
+    background-image: url(./assets/placa_branca.jpg);
+  }
+
+  .cell-two:nth-child(odd){
+    background-image: url(./assets/placa_branca.jpg);
+  }
+
+  .cell-two:nth-child(even){
+    background-image: url(./assets/placa_preta.jpg);
+  }
+
+
+  .game-two:nth-child(6) {
+    margin-bottom: 50px;
+
+  }
+  
